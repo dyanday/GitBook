@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>php运算符 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07_php流程控制.html" />
+    
+    
+    <link rel="prev" href="05_php常量.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_php介绍.html">
+            
+                <a href="01_php介绍.html">
+            
+                    
+                    php基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01_php介绍.html">
+            
+                <a href="01_php介绍.html">
+            
+                    
+                    php介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02_PHP基础语法.html">
+            
+                <a href="02_PHP基础语法.html">
+            
+                    
+                    php基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03_php变量.html">
+            
+                <a href="03_php变量.html">
+            
+                    
+                    php变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="04_php数据类型.html">
+            
+                <a href="04_php数据类型.html">
+            
+                    
+                    php数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="05_php常量.html">
+            
+                <a href="05_php常量.html">
+            
+                    
+                    php常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="06_php运算符.html">
+            
+                <a href="06_php运算符.html">
+            
+                    
+                    php运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="07_php流程控制.html">
+            
+                <a href="07_php流程控制.html">
+            
+                    
+                    php流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="08_php数组.html">
+            
+                <a href="08_php数组.html">
+            
+                    
+                    php数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="09_php函数.html">
+            
+                <a href="09_php函数.html">
+            
+                    
+                    php函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="10_php面向对象.html">
+            
+                <a href="10_php面向对象.html">
+            
+                    
+                    php面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="11_php命名空间.html">
+            
+                <a href="11_php命名空间.html">
+            
+                    
+                    php命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="12_php日期和时间.html">
+            
+                <a href="12_php日期和时间.html">
+            
+                    
+                    php日期时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="13_php表单.html">
+            
+                <a href="13_php表单.html">
+            
+                    
+                    php表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="14_php包含文件.html">
+            
+                <a href="14_php包含文件.html">
+            
+                    
+                    php包含文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="15_php常用函数.html">
+            
+                <a href="15_php常用函数.html">
+            
+                    
+                    php常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../php高级/16_php常用变量函数.md">
+            
+                <span>
+            
+                    
+                    php常用变量函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../php高级/01_php错误与异常.html">
+            
+                <a href="../php高级/01_php错误与异常.html">
+            
+                    
+                    php错误与异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../php高级/02_PhpStorm本地断点调试.html">
+            
+                <a href="../php高级/02_PhpStorm本地断点调试.html">
+            
+                    
+                    PhpStorm本地断点调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../php高级/03_php文件操作.html">
+            
+                <a href="../php高级/03_php文件操作.html">
+            
+                    
+                    php文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../php高级/04_cookie机制.html">
+            
+                <a href="../php高级/04_cookie机制.html">
+            
+                    
+                    cookie机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../php高级/05_session.html">
+            
+                <a href="../php高级/05_session.html">
+            
+                    
+                    session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../php高级/06_php画图.html">
+            
+                <a href="../php高级/06_php画图.html">
+            
+                    
+                    php画图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../php高级/07_php加密机制.html">
+            
+                <a href="../php高级/07_php加密机制.html">
+            
+                    
+                    php加密机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >php运算符</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="php&#x8FD0;&#x7B97;&#x7B26;">PHP&#x8FD0;&#x7B97;&#x7B26;</h1>
+<h3 id="&#x7B97;&#x6570;&#x8FD0;&#x7B97;&#x7B26;">&#x7B97;&#x6570;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>&#x52A0;&#x6CD5;</td>
+<td>$x+$y</td>
+</tr>
+<tr>
+<td>-</td>
+<td>&#x51CF;&#x6CD5;</td>
+<td>$x-$y</td>
+</tr>
+<tr>
+<td>*</td>
+<td>&#x4E58;&#x6CD5;</td>
+<td>$x*$y</td>
+</tr>
+<tr>
+<td>/</td>
+<td>&#x9664;&#x6CD5;</td>
+<td>$x/$y</td>
+</tr>
+<tr>
+<td>%</td>
+<td>&#x53D6;&#x4F59;</td>
+<td>$x%$y</td>
+</tr>
+<tr>
+<td>-</td>
+<td>&#x53D6;&#x53CD;</td>
+<td>-$x</td>
+</tr>
+<tr>
+<td>.</td>
+<td>&#x5E76;&#x7F6E;</td>
+<td>$str1.$str</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;">&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>PHP&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x4E8E;&#x5411;&#x53D8;&#x91CF;&#x5199;&#x503C;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>$x = 100</td>
+<td>&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>$x += 10</td>
+<td>&#x52A0;&#x6CD5;</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>$x -= 10</td>
+<td>&#x51CF;&#x6CD5;</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>$x *= 10</td>
+<td>&#x4E58;&#x6CD5;</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>$x /= 3</td>
+<td>&#x9664;&#x6CD5;</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>$x %= 2</td>
+<td>&#x53D6;&#x4F59;</td>
+</tr>
+<tr>
+<td>.=</td>
+<td>$str .= &quot;lisi&quot;</td>
+<td>&#x8FDE;&#x63A5;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x9012;&#x589E;&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;">&#x9012;&#x589E;/&#x9012;&#x51CF;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>++x</td>
+<td>++$x</td>
+<td>$x+1 &#x7136;&#x540E;&#x8FD4;&#x56DE;$x</td>
+</tr>
+<tr>
+<td>x++</td>
+<td>$x++</td>
+<td>&#x8FD4;&#x56DE;$x,$x+1</td>
+</tr>
+<tr>
+<td>--x</td>
+<td>--$x</td>
+<td>$x-1 &#x8FD4;&#x56DE;$x</td>
+</tr>
+<tr>
+<td>x--</td>
+<td>$x--</td>
+<td>&#x8FD4;&#x56DE;$x,$x-1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;">&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>&#x7B49;&#x4E8E;</td>
+<td>&#x6BD4;&#x8F83;&#x503C;&#x662F;&#x5426;&#x76F8;&#x540C;</td>
+</tr>
+<tr>
+<td>===</td>
+<td>&#x6052;&#x7B49;&#x4E8E;</td>
+<td>&#x6BD4;&#x8F83;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3001;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x76F8;&#x540C;</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>&#x4E0D;&#x7B49;&#x4E8E;</td>
+<td>&#x503C;&#x4E0D;&#x76F8;&#x7B49;</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>&#x4E0D;&#x7B49;&#x4E8E;</td>
+<td>&#x503C;&#x4E0D;&#x76F8;&#x7B49;</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>&#x4E0D;&#x6052;&#x7B49;</td>
+<td>&#x503C;&#x6216;&#x7C7B;&#x578B;&#x4E0D;&#x76F8;&#x540C;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&#x5927;&#x4E8E;</td>
+<td>$x&gt;$y $x&#x6BD4;$y&#x5927;&#x8FD4;&#x56DE;true</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&#x5C0F;&#x4E8E;</td>
+<td>$x&lt;$y $x&#x5C0F;&#x4E8E;$y&#x8FD4;&#x56DE;true</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>&#x5927;&#x4E8E;&#x7B49;&#x4E8E;</td>
+<td>$x&gt;=$y $x&#x6BD4;$y&#x5927;&#x6216;&#x76F8;&#x7B49;&#x8FD4;&#x56DE;true</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;</td>
+<td>$x&lt;=$y $x&#x6BD4;$y&#x5C0F;&#x6216;&#x76F8;&#x7B49;&#x8FD4;&#x56DE;true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>and</td>
+<td>&#x4E0E;</td>
+<td>$x and $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x90FD;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true</td>
+</tr>
+<tr>
+<td>or</td>
+<td>&#x6216;</td>
+<td>$x or $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>xor</td>
+<td>&#x5F02;&#x6216;</td>
+<td>$x xor $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>&#x4E0E;</td>
+<td>$x &amp;&amp; $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x90FD;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>II</td>
+<td>&#x6216;</td>
+<td>$x II $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>!</td>
+<td>&#x975E;</td>
+<td>!$x</td>
+<td>&#x5982;&#x679C; $x &#x4E0D;&#x4E3A; true&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="php-&#x6570;&#x7EC4;&#x8FD0;&#x7B97;&#x7B26;">PHP &#x6570;&#x7EC4;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>PHP &#x6570;&#x7EC4;&#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x6570;&#x7EC4;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x4F8B;&#x5B50;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>&#x8054;&#x5408;</td>
+<td>$x + $y</td>
+<td>$x &#x548C; $y &#x7684;&#x8054;&#x5408;&#xFF08;&#x4F46;&#x4E0D;&#x8986;&#x76D6;&#x91CD;&#x590D;&#x7684;&#x952E;&#xFF09;</td>
+</tr>
+<tr>
+<td>==</td>
+<td>&#x76F8;&#x7B49;</td>
+<td>$x == $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x62E5;&#x6709;&#x76F8;&#x540C;&#x7684;&#x952E;/&#x503C;&#x5BF9;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>===</td>
+<td>&#x5168;&#x7B49;</td>
+<td>$x === $y</td>
+<td>&#x5982;&#x679C; $x &#x548C; $y &#x62E5;&#x6709;&#x76F8;&#x540C;&#x7684;&#x952E;/&#x503C;&#x5BF9;&#xFF0C;&#x4E14;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>&#x4E0D;&#x76F8;&#x7B49;</td>
+<td>$x != $y</td>
+<td>&#x5982;&#x679C; $x &#x4E0D;&#x7B49;&#x4E8E; $y&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>&#x4E0D;&#x76F8;&#x7B49;</td>
+<td>$x &lt;&gt; $y</td>
+<td>&#x5982;&#x679C; $x &#x4E0D;&#x7B49;&#x4E8E; $y&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>&#x4E0D;&#x5168;&#x7B49;</td>
+<td>$x !== $y</td>
+<td>&#x5982;&#x679C; $x &#x4E0E; $y &#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;">&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<pre><code>$var = exp?x:y&#xFF1B;
+</code></pre><h3 id="&#x9519;&#x8BEF;&#x63A7;&#x5236;&#x7B26;-">&#x9519;&#x8BEF;&#x63A7;&#x5236;&#x7B26; @</h3>
+<p>&#x5728;PHP&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;@&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x6291;&#x5236;&#x5355;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;PHP&#x62A5;&#x544A;&#x5B83;&#x4E0D;&#x5305;&#x62EC;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-php">@<span class="hljs-keyword">include</span> (<span class="hljs-string">&apos;config.inc.php&apos;</span>);
+</code></pre>
+<p>&#x6216;&#x8005;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x201C;&#x9664;&#x4EE5;0&#x201D;&#x9519;&#x8BEF;&#xFF1A;</p>
+<pre><code class="lang-php">$x = <span class="hljs-number">8</span>;
+$y = <span class="hljs-number">0</span>;
+$num = @($x/$y);
+</code></pre>
+<p>&#x50CF;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x6216;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x4E00;&#x6837;&#xFF0C;@&#x7B26;&#x53F7;&#x53EA;&#x80FD;&#x5904;&#x7406;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x4E0D;&#x80FD;&#x5728;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x3001;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x3001;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7B49;&#x4E4B;&#x524D;&#x4F7F;&#x7528;@&#x7B26;&#x53F7;&#x3002; &#x4E00;&#x6761;&#x7ECF;&#x9A8C;&#x6CD5;&#x5219;&#x662F;&#xFF0C;&#x6211;&#x5EFA;&#x8BAE;&#x5C06;@&#x7B26;&#x53F7;&#x7528;&#x4E8E;&#x90A3;&#x4E9B;&#x6267;&#x884C;&#x5931;&#x8D25;&#x65F6;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x811A;&#x672C;&#x6574;&#x4F53;&#x529F;&#x80FD;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05_php常量.html" class="navigation navigation-prev " aria-label="Previous page: php常量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07_php流程控制.html" class="navigation navigation-next " aria-label="Next page: php流程控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"php运算符","level":"1.2.6","depth":2,"next":{"title":"php流程控制","level":"1.2.7","depth":2,"path":"php/php基础/07_php流程控制.md","ref":"./php/php基础/07_php流程控制.md","articles":[]},"previous":{"title":"php常量","level":"1.2.5","depth":2,"path":"php/php基础/05_php常量.md","ref":"./php/php基础/05_php常量.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php/php基础/06_php运算符.md","mtime":"2020-04-23T09:59:52.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-23T11:06:38.883Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

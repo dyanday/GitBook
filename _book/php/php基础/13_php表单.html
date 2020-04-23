@@ -1,0 +1,607 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>php表单 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14_php包含文件.html" />
+    
+    
+    <link rel="prev" href="12_php日期和时间.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_php介绍.html">
+            
+                <a href="01_php介绍.html">
+            
+                    
+                    php基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01_php介绍.html">
+            
+                <a href="01_php介绍.html">
+            
+                    
+                    php介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02_PHP基础语法.html">
+            
+                <a href="02_PHP基础语法.html">
+            
+                    
+                    php基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03_php变量.html">
+            
+                <a href="03_php变量.html">
+            
+                    
+                    php变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="04_php数据类型.html">
+            
+                <a href="04_php数据类型.html">
+            
+                    
+                    php数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="05_php常量.html">
+            
+                <a href="05_php常量.html">
+            
+                    
+                    php常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="06_php运算符.html">
+            
+                <a href="06_php运算符.html">
+            
+                    
+                    php运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="07_php流程控制.html">
+            
+                <a href="07_php流程控制.html">
+            
+                    
+                    php流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="08_php数组.html">
+            
+                <a href="08_php数组.html">
+            
+                    
+                    php数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="09_php函数.html">
+            
+                <a href="09_php函数.html">
+            
+                    
+                    php函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="10_php面向对象.html">
+            
+                <a href="10_php面向对象.html">
+            
+                    
+                    php面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="11_php命名空间.html">
+            
+                <a href="11_php命名空间.html">
+            
+                    
+                    php命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="12_php日期和时间.html">
+            
+                <a href="12_php日期和时间.html">
+            
+                    
+                    php日期时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.13" data-path="13_php表单.html">
+            
+                <a href="13_php表单.html">
+            
+                    
+                    php表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="14_php包含文件.html">
+            
+                <a href="14_php包含文件.html">
+            
+                    
+                    php包含文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="15_php常用函数.html">
+            
+                <a href="15_php常用函数.html">
+            
+                    
+                    php常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../php高级/16_php常用变量函数.md">
+            
+                <span>
+            
+                    
+                    php常用变量函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../php高级/01_php错误与异常.html">
+            
+                <a href="../php高级/01_php错误与异常.html">
+            
+                    
+                    php错误与异常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../php高级/02_PhpStorm本地断点调试.html">
+            
+                <a href="../php高级/02_PhpStorm本地断点调试.html">
+            
+                    
+                    PhpStorm本地断点调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../php高级/03_php文件操作.html">
+            
+                <a href="../php高级/03_php文件操作.html">
+            
+                    
+                    php文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../php高级/04_cookie机制.html">
+            
+                <a href="../php高级/04_cookie机制.html">
+            
+                    
+                    cookie机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../php高级/05_session.html">
+            
+                <a href="../php高级/05_session.html">
+            
+                    
+                    session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../php高级/06_php画图.html">
+            
+                <a href="../php高级/06_php画图.html">
+            
+                    
+                    php画图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../php高级/07_php加密机制.html">
+            
+                <a href="../php高级/07_php加密机制.html">
+            
+                    
+                    php加密机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >php表单</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8868;&#x5355;">&#x8868;&#x5355;</h1>
+<blockquote>
+<p>&#x5728; PHP &#x4E2D;&#xFF0C;&#x9884;&#x5B9A;&#x4E49;&#x7684; $_GET &#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x6536;&#x96C6;&#x6765;&#x81EA; method=&quot;get&quot; &#x7684;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5728; PHP &#x4E2D;&#xFF0C;&#x9884;&#x5B9A;&#x4E49;&#x7684; $_POST &#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x6536;&#x96C6;&#x6765;&#x81EA; method=&quot;post&quot; &#x7684;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+</blockquote>
+<h3 id="get-&#x53D8;&#x91CF;">$_GET &#x53D8;&#x91CF;</h3>
+<p>&#x9884;&#x5B9A;&#x4E49;&#x7684; $_GET &#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x6536;&#x96C6;&#x6765;&#x81EA; method=&quot;get&quot; &#x7684;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4ECE;&#x5E26;&#x6709; GET &#x65B9;&#x6CD5;&#x7684;&#x8868;&#x5355;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5BF9;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#xFF08;&#x4F1A;&#x663E;&#x793A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5730;&#x5740;&#x680F;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#x7684;&#x91CF;&#x4E5F;&#x6709;&#x9650;&#x5236;&#x3002;</p>
+<h3 id="post-&#x53D8;&#x91CF;">$_POST &#x53D8;&#x91CF;</h3>
+<p>&#x9884;&#x5B9A;&#x4E49;&#x7684; $_POST &#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x6536;&#x96C6;&#x6765;&#x81EA; method=&quot;post&quot; &#x7684;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4ECE;&#x5E26;&#x6709; POST &#x65B9;&#x6CD5;&#x7684;&#x8868;&#x5355;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5BF9;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#xFF08;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5730;&#x5740;&#x680F;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#x7684;&#x91CF;&#x4E5F;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x3002; &#x6CE8;&#x91CA;&#xFF1A;&#x7136;&#x800C;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;POST &#x65B9;&#x6CD5;&#x7684;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#x7684;&#x91CF;&#x6700;&#x5927;&#x503C;&#x4E3A; 8 MB&#xFF08;&#x53EF;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; php.ini &#x6587;&#x4EF6;&#x4E2D;&#x7684; post_max_size &#x8FDB;&#x884C;&#x66F4;&#x6539;&#xFF09;&#x3002;</p>
+<h3 id="request&#x53D8;&#x91CF;">$_REQUEST&#x53D8;&#x91CF;</h3>
+<p>&#x9884;&#x5B9A;&#x4E49;&#x7684; $_REQUEST&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4EE5;POST&#x65B9;&#x6CD5;&#x548C;GET&#x65B9;&#x6CD5;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x901F;&#x5EA6;&#x6BD4;&#x8F83;&#x6162; &#x3002;</p>
+<h3 id="files&#x53D8;&#x91CF;">$_FILES&#x53D8;&#x91CF;</h3>
+<p>$_FILES&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4E0A;&#x4F20;&#x5230;&#x540E;&#x53F0;&#x7684;&#x6587;&#x4EF6;&#x3002; &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x8868;&#x5355;&#x7684; input name&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E0B;&#x6807;&#x53EF;&#x4EE5;&#x662F; &quot;name&quot;&#x3001;&quot;type&quot;&#x3001;&quot;size&quot;&#x3001;&quot;tmp_name&quot; &#x6216; &quot;error&quot;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$_FILES[&quot;file&quot;][&quot;name&quot;]</td>
+<td>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>$_FILES[&quot;file&quot;][&quot;type&quot;]</td>
+<td>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>$_FILES[&quot;file&quot;][&quot;size&quot;]</td>
+<td>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x8BA1; 1kb=1024byte</td>
+</tr>
+<tr>
+<td>$_FILES[&quot;file&quot;][&quot;tmp_name&quot;]</td>
+<td>&#x5B58;&#x50A8;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x4E34;&#x65F6;&#x526F;&#x672C;&#x7684;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>$_FILES[&quot;file&quot;][&quot;error&quot;]</td>
+<td>&#x7531;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5BFC;&#x81F4;&#x7684;&#x9519;&#x8BEF;&#x4EE3;&#x7801;</td>
+</tr>
+</tbody>
+</table>
+<pre><code>if(is_uploaded_file($_FILES[&apos;f&apos;][&apos;tmp_name&apos;])){
+    move_uploaded_file($_FILES[&apos;f&apos;][&apos;tmp_name&apos;],&apos;../upload/&apos;.$_FILES[&apos;f&apos;][&apos;name&apos;]);
+}else{
+    echo &quot;&#x4E0A;&#x4F20;&#x9519;&#x8BEF;!&quot;;
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12_php日期和时间.html" class="navigation navigation-prev " aria-label="Previous page: php日期时间">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14_php包含文件.html" class="navigation navigation-next " aria-label="Next page: php包含文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"php表单","level":"1.2.13","depth":2,"next":{"title":"php包含文件","level":"1.2.14","depth":2,"path":"php/php基础/14_php包含文件.md","ref":"./php/php基础/14_php包含文件.md","articles":[]},"previous":{"title":"php日期时间","level":"1.2.12","depth":2,"path":"php/php基础/12_php日期和时间.md","ref":"./php/php基础/12_php日期和时间.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php/php基础/13_php表单.md","mtime":"2020-04-23T09:59:52.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-23T11:06:38.883Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
